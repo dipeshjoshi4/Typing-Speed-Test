@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: orange;
+    margin-bottom: 25px;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    padding: 0 10px;
+    justify-content: center;
+    align-items: center;
+    background:purple;
+
+}
+
+.wrapper{
+    width:50rem;
+    padding:35px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0,10px,15px rgba(0,0,0,0.5);
+}
+
+.wrapper .input-field{
+    padding: 15px 15px 0px;
+    position: absolute;
+    opacity: 0;
+    z-index:-99;
+}
+
+
+.wrapper .content-box{
+    border:1px solid #bfbfbf;
+    border-radius: 10px;
+    padding:12px 13px 0;
+}
+
+.content-box .content{
+    margin-top: 1rem;
+    padding:12px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid #bfbfbf;
+}
+
+ .content-box .result-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:calc(100% - 140px);
+}
+
+.result-details li{
+    display:flex;
+    align-items: center;
+    height: 20px;
+    list-style: none;
+}
+
+.content button{
+    background: purple;
+    color: #fff;
+    outline:none;
+    border: none;
+    width:100px;
+    border-radius: 5px;
+    padding:15px 5px;
+    font-size: 0.7rem;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.content button:active{
+    transform: scale(0.97);
+}
+
+.typing-text p span{
+    position: relative;
+}
+
+.typing-text p span.active{
+    color:darkorange;
+}
+
+.typing-text p span.correct{
+    color:green;
+}
+
+.typing-text p span.incorrect{
+    color:red;
+    outline:1px solid #fff;
+    background:#ffc0cb;
+    border-radius: 4px;
+}
+
+::selection{
+    color:#fff;
+    background-color:purple;
+}
+
+/* 
+.orange{
+    position: absolute;
+    top:4px;
+    width:100px;
+    height:40px;
+    background-color: orange;
+    border-radius: 10px;
+    padding:2px 5px;
+}
+
+.red{
+    position: absolute;
+    top:4px;
+    left:300px;
+    width:100px;
+    height:40px;
+    background-color: red;
+    border-radius: 10px;
+    padding:2px 5px;
+}
+
+.green{
+    position: absolute;
+    top:4px;
+    left:507px;
+    width:100px;
+    height:40px;
+    background-color: green;
+    border-radius: 10px;
+    padding:2px 5px;
+} 
+*/
